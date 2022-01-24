@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> STUDENT INFO </title>
+	<link rel="stylesheet" href="format.css">
+</head>
+
+<body>
+<h1>STUDENT INFORMATION</h1>
+<h4>Please fill the required details carefully...</h4>
+
+<form action="Submitted.html" target="_blank" method="post" autocomplete="on">
+	<fieldset border="2px solid black">
+	<legend>INFO FIELD</legend>
+
+	<ol type="1">
+	<li><label for="email">Email:</label><br>
+	<input type="email" id="email" name="email" required><br><br></li>
+	
+	<li><label for="sname">Name:</label><br>
+	<input type="text" id="sname" name="sname" required><br><br></li>
+
+	<li><label for="usn">USN:</label><br>
+	<input type="text" id="usn" name="usn" required><br><br></li>
+
+	<li><label for="dob">Date of Birth:</label><br>
+	<input type="date" id="dob" name="dob" required><br><br></li>
+	
+	<li><label>Year</label><br>
+	<input type="radio" id="first" name="year" value="FIRST">
+	<label for="first">First</label><br>
+	<input type="radio" id="second" name="year" value="SECOND">
+	<label for="second">Second</label><br>
+	<input type="radio" id="third" name="year" value="THIRD">
+	<label for="third">Third</label><br>
+	<input type="radio" id="fourth" name="year" value="FOURTH">
+	<label for="fourth">Fourth</label><br>	
+	<br></li>
+
+	<li><label for="branch">Branch:</label><br>
+	<select name="branch> id="branch">
+		<option value="bt">BT</option>
+		<option value="civil">Civil</option>
+		<option value="cse">CSE</option>
+		<option value="ece">ECE</option>
+		<option value="eee">EEE</option>
+		<option value="ip">IP</option>
+		<option value="ise">ISE</option>
+		<option value="me">ME</option>
+	</select><br><br></li>
+	
+	<li><label for="phone">Phone number:</label><br>
+	<input type="tel" id="phone" name="phone" placeholder="1234567890" required><br></li>
+
+	</fieldset>
+	<br>
+
+	<button type="button" onclick="alert('Check for mistakes if any')">Confirm submission</button>
+	<br><br>
+
+	<input type="submit"/>
+	
+
+</form>
+
+</body>
+
+</html>
